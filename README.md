@@ -1,2 +1,6 @@
 # NoMoreWind
-the wind is an opp (must be in a modded btw)
+### every1 hates the wind barrier so i removed it. 
+
+needs
+ - newtilla
+
