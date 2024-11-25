@@ -2,7 +2,7 @@
 ### every1 hates the wind barrier so i removed it. 
 a simple mod that disables the wind barrier in forest.
 
-**you must be in a modded for it to work**
+##### **you must be in a modded for it to work**
 
 needs
  - [newtilla](https://github.com/Loafiat/Newtilla/releases/latest)
