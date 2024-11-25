@@ -29,7 +29,7 @@ namespace nomorewind
 	void Update()
 	{
 			if (PhotonNetwork.CurrentRoom.CustomProperties["gameMode"].ToString().Contains("MODDED")) OnJoin();
-			else OnLeave();
+			if(!PhotonNetwork.InRoom) OnLeave();
     }
 
         void OnJoin()
