@@ -1,52 +1,35 @@
-﻿using System;
 using BepInEx;
+using Photon.Pun;
+using System;
 using UnityEngine;
-using Newtilla;
 namespace nomorewind
 {
+    [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
 
-	[BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
-	public class Plugin : BaseUnityPlugin
-	{
-		bool inRoom;
+    public class Plugin : BaseUnityPlugin
+    {
+        bool inRoom;
 
-		void Start()
-		{
-
-            Newtilla.Newtilla.OnJoinModded += OnModdedJoined;
-            Newtilla.Newtilla.OnLeaveModded += OnModdedLeft;
-        }
-
-		void OnEnable()
-		{
-			HarmonyPatches.ApplyHarmonyPatches();
-		}
-
-		void OnDisable()
-		{
-			HarmonyPatches.RemoveHarmonyPatches();
-		}
-
-		void OnGameInitialized(object sender, EventArgs e)
-		{
-        }
-
-		void Update()
-		{
-        }
-
-        void OnModdedJoined(string modeName)
+        void Start()
         {
-			GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(false);
 
-            inRoom = true;
-		}
+        }
 
-        void OnModdedLeft(string modeName)
+        void OnGameInitialized(object sender, EventArgs e)
         {
-			GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(true);
+            inRoom = PhotonNetwork.InRoom && PhotonNetwork.CurrentRoom.CustomProperties["gameMode"].ToString().Contains("MODDED");
+        }
 
-            inRoom = false;
-		}
-	}
+        void Update()
+        {
+            if (inRoom)
+            {
+                GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(false);
+            }
+            else
+            {
+                GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(true);
+            }
+        }
+    }
 }
