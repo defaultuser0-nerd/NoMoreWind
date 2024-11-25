@@ -4,8 +4,7 @@ using UnityEngine;
 using Newtilla;
 using NoMoreWind.Patches;
 namespace nomorewind
-{
-
+   {
         [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
 	public class Plugin : BaseUnityPlugin
 	{
