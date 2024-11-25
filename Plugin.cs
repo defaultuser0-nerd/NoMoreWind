@@ -1,7 +1,6 @@
 using System;
 using BepInEx;
 using UnityEngine;
-using Newtilla;
 using NoMoreWind.Patches;
 namespace nomorewind
    {
@@ -12,9 +11,8 @@ namespace nomorewind
 
 	void Start()
 	{
-            Newtilla.Newtilla.OnJoinModded += OnModdedJoined;
-            Newtilla.Newtilla.OnLeaveModded += OnModdedLeft;
-        }
+
+    }
 
 	void OnEnable()
 	{
@@ -26,22 +24,22 @@ namespace nomorewind
 	   HarmonyPatches.RemoveHarmonyPatches();
 	}
 
-	void OnGameInitialized(object sender, EventArgs e)
-	{
-        }
+	
 
 	void Update()
 	{
-        }
+			if (PhotonNetwork.CurrentRoom.CustomProperties["gameMode"].ToString().Contains("MODDED")) OnJoin();
+			if(!PhotonNetwork.InRoom) OnLeave();
+    }
 
-        void OnModdedJoined(string modeName)
+        void OnJoin()
         {
 	    GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(false);
 
             inRoom = true;
 	}
 
-        void OnModdedLeft(string modeName)
+        void OnLeave()
         {
 	    GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(true);
 
@@ -49,3 +47,4 @@ namespace nomorewind
         }
       } 
    }
+
