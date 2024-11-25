@@ -1,16 +1,19 @@
 # **NoMoreWind**
-## **Disable the Wind Barrier in Forest**
-
-Tired of the wind barrier blocking your progress in the Forest? This simple mod removes the wind barrier, allowing you to explore freely without interruptions.
+This mod simply lets roam free in forest without that annoying wind barrier.
+Thanks [Cody](<https://github.com/ArtificialGorillas>) for helpin' out.
+**you must be in a modded**
 
 #### **Features**
-- **Disables the Wind Barrier** in the Forest biome.
-- **Streamlined and lightweight mod** for a better gameplay experience.
+- Disables the wind in forest
+- Very skibidi
 
 #### **Requirements**
-- **BepInEx**: Make sure you have BepInEx installed. You can download it [here](https://github.com/BepInEx/BepInEx/releases/latest).
+ - [BepInEx](<https://github.com/BepInEx/BepInEx/releases/latest>)
+ - [Newtilla](<https://github.com/Loafiat/Newtilla/releases/latest>) or Utilla
+
 
 #### **Installation**
-1. Install BepInEx following the official instructions.
-2. Place the mod file into your `BepInEx/plugins` folder.
-3. Enjoy exploring the Forest without the wind barrier!
+1. Download the [Mod](https://github.com/defaultuser0-nerd/NoMoreWind/releases/latest)
+2. Go to your plugins folder
+3. And extract the zip file
+4. Now you (should) be able to go in a modded lobby and have no wind barrier!
