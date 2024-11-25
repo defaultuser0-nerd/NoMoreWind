@@ -10,7 +10,7 @@ Thanks [Cody](<https://github.com/ArtificialGorillas>) for helpin' out.
 
 #### **Requirements**
  - [BepInEx](<https://github.com/BepInEx/BepInEx/releases/latest>)
- - [Newtilla](<https://github.com/Loafiat/Newtilla/releases/latest>) or Utilla
+ - [Newtilla](<https://github.com/Loafiat/Newtilla/releases/latest>)
 
 
 #### **Installation**
