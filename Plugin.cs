@@ -37,14 +37,12 @@ namespace nomorewind
         void OnModdedJoined(string modeName)
         {
             GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(false);
-            Debug.Log("Wind has been removed.");
             inRoom = true;
         }
 
         void OnModdedLeft(string modeName)
         {
             GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(true);
-            Debug.Log("Wind has been added back.");
             inRoom = false;
         }
     }
