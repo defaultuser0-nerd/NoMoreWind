@@ -1,6 +1,6 @@
 # **NoMoreWind**
 This mod simply lets roam free in forest without that annoying wind barrier.
-Thanks [Cody](<https://github.com/ArtificialGorillas>) for helpin' out.
+Thanks [Cody](<https://github.com/NeoTechGorillas>) for helpin' out.
 
 **You must be in a modded**
 
@@ -10,7 +10,7 @@ Thanks [Cody](<https://github.com/ArtificialGorillas>) for helpin' out.
 
 #### **Requirements**
  - [BepInEx](<https://github.com/BepInEx/BepInEx/releases/latest>)
- - [Newtilla](<https://github.com/Loafiat/Newtilla/releases/latest>)
+ - Any tilla 
 
 
 #### **Installation**
