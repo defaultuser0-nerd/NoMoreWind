@@ -6,7 +6,7 @@ using Newtilla;
 using NoMoreWind.Patches;
 namespace nomorewind
 {
-    [ModdedGamemode]
+    [ModdedGamemode] // for utilla support
     [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
     public class Plugin : BaseUnityPlugin
     {
@@ -14,7 +14,7 @@ namespace nomorewind
 
         void Start()
         {
-            Newtilla.Newtilla.OnJoinModded += OnModdedJoined;
+            Newtilla.Newtilla.OnJoinModded += OnModdedJoined; // for newtilla support
             Newtilla.Newtilla.OnLeaveModded += OnModdedLeft;
             HarmonyPatches.ApplyHarmonyPatches();
         }
@@ -22,16 +22,16 @@ namespace nomorewind
         [ModdedGamemodeJoin]
         void OnModdedJoined(string modeName)
         {
-            GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(false);
-            Debug.Log("Wind removed");
+            GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(false); // disables wind
+            Debug.Log("Wind removed"); // logs it
             inRoom = true;
         }
 
         [ModdedGamemodeLeave]
         void OnModdedLeft(string modeName)
         {
-            GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(true);
-            Debug.Log("Wind readded");
+            GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(true); // enables wind again
+            Debug.Log("Wind readded"); // logs it
             inRoom = false;
         }
     }
