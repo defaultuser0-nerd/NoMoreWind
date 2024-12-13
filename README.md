@@ -10,7 +10,7 @@ Thanks [Cody](<https://github.com/NeoTechGorillas>) for helpin' out.
 
 #### **Requirements**
  - [BepInEx](<https://github.com/BepInEx/BepInEx/releases/latest>)
- - Any tilla 
+ - Any tilla mod
 
 
 #### **Installation**
