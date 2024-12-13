@@ -24,7 +24,7 @@ namespace nomorewind
         {
             GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(false); // disables wind
             Debug.Log("Wind removed"); // logs it
-            inRoom = true;
+            inRoom = true; // iirc only here for utilla
         }
 
         [ModdedGamemodeLeave]
@@ -32,7 +32,7 @@ namespace nomorewind
         {
             GameObject.Find("Environment Objects/LocalObjects_Prefab/Forest/Environment/Forest_ForceVolumes/").SetActive(true); // enables wind again
             Debug.Log("Wind readded"); // logs it
-            inRoom = false;
+            inRoom = false; // iirc only here for utilla
         }
     }
 }
