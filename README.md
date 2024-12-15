@@ -3,17 +3,18 @@ This mod simply lets roam free in forest without that annoying wind barrier.
 
 **You must be in a modded**
 
-#### **Features**
+### **Features**
 - Disables the wind in in every map
 
 
-#### **Requirements**
+### **Requirements**
  - [BepInEx](<https://github.com/BepInEx/BepInEx/releases/latest>)
  - [Newtilla](https://github.com/Loafiat/Newtilla)
- - Soon TillaHook when it comes out...
 
+### **Notes**
+- Soon TillaHook support after it releases
 
-#### **Installation**
+### **Installation**
 1. Download the [Mod](https://github.com/defaultuser0-nerd/NoMoreWind/releases/latest)
 2. Go to your plugins folder
 3. And put the dll in there
