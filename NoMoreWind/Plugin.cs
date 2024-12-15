@@ -1,6 +1,8 @@
 using BepInEx;
 using HarmonyLib;
 using System.Collections.Generic;
+using Newtilla;
+using Utilla;
 
 namespace NoMoreWind
 {
@@ -17,8 +19,10 @@ namespace NoMoreWind
         {
             Harmony.CreateAndPatchAll(GetType().Assembly, Constants.Guid); // Not listed under Harmony docs (https://harmony.pardeike.net/articles/basics.html) but this does mostly the same code under "Patching using annotations"
 
-            TillaHook.TillaHook.OnModdedJoin += OnModdedJoin;
-            TillaHook.TillaHook.OnModdedLeave += OnModdedLeave;
+            Newtilla.Newtilla.OnJoinModded += OnModdedJoin;
+            Newtilla.Newtilla.OnLeaveModded += OnModdedLeave;
+            // TillaHook.TillaHook.OnModdedJoin += OnModdedJoin; - TillaHook isnt out... yet
+            // TillaHook.TillaHook.OnModdedLeave += OnModdedLeave;
         }
 
         public void OnEnable()
