@@ -2,7 +2,6 @@ using BepInEx;
 using HarmonyLib;
 using System.Collections.Generic;
 using Newtilla;
-using Utilla;
 
 namespace NoMoreWind
 {
