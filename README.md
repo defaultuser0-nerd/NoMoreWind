@@ -9,7 +9,8 @@ This mod simply lets roam free in forest without that annoying wind barrier.
 
 #### **Requirements**
  - [BepInEx](<https://github.com/BepInEx/BepInEx/releases/latest>)
- - Any tilla mod
+ - [Newtilla](https://github.com/Loafiat/Newtilla)
+ - Soon TillaHook when it comes out...
 
 
 #### **Installation**
@@ -23,8 +24,8 @@ This mod simply lets roam free in forest without that annoying wind barrier.
 - [NeoTechGorillas](https://github.com/NeoTechGorillas)
 ###### tysm guys for helping me btw <3
   
-
-
-
+ 
+ 
+ 
 
 ###### This product is not affiliated with Another Axiom Inc. or its videogames Gorilla Tag and Orion Drift and is not endorsed or otherwise sponsored by Another Axiom. Portions of the materials contained herein are property of Another Axiom. ©2021 Another Axiom Inc.
