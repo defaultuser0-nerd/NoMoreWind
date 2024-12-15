@@ -20,7 +20,7 @@ This mod simply lets roam free in forest without that annoying wind barrier.
 
 #### Contributors
 ###### tysm guys for helping me btw <3
-- Dev9998
-- NeoTechGorillas
+- [Dev9998](https://github.com/developer9998)
+- [NeoTechGorillas](https://github.com/NeoTechGorillas)
 
 ###### This product is not affiliated with Another Axiom Inc. or its videogames Gorilla Tag and Orion Drift and is not endorsed or otherwise sponsored by Another Axiom. Portions of the materials contained herein are property of Another Axiom. ©2021 Another Axiom Inc.
