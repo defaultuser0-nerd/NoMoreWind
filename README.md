@@ -4,8 +4,8 @@ This mod simply lets roam free in forest without that annoying wind barrier.
 **You must be in a modded**
 
 #### **Features**
-- Disables the wind in forest
-- Very skibidi
+- Disables the wind in in every map
+
 
 #### **Requirements**
  - [BepInEx](<https://github.com/BepInEx/BepInEx/releases/latest>)
