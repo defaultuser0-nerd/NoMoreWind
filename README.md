@@ -22,7 +22,7 @@ This mod simply lets roam free in forest without that annoying wind barrier.
 
 ### Contributors
 - [Dev9998](https://github.com/developer9998)
-- [NeoTechGorillas](https://github.com/NeoTechGorillas)
+- [Cody](https://github.com/developer-cody)
 ###### tysm guys for helping me btw <3
   
  
