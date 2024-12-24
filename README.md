@@ -1,5 +1,6 @@
 # **NoMoreWind**
 <a href="https://github.com/defaultuser0-nerd/NoMoreWind/releases"><img src="https://img.shields.io/github/downloads/defaultuser0-nerd/NoMoreWind/total.svg?style=for-the-badge"></a>
+
 This mod simply lets roam free in forest without that annoying wind barrier.
 
 **You must be in a modded**
