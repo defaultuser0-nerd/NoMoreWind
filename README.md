@@ -23,8 +23,8 @@ This mod simply lets roam free in forest without that annoying wind barrier.
 4. Now you (should) be able to go in a modded lobby and have no wind barrier!
 
 ### Contributors
-- [Dev9998](https://github.com/developer9998)
-- [Cody](https://github.com/developer-cody)
+- [Dev9998](https://github.com/developer9998) - Purely made the code much better
+- [Cody](https://github.com/developer-cody) - Helped me make it a actual mod
 ###### tysm guys for helping me btw <3
   
  
