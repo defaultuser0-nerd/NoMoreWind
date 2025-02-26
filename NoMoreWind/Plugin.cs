@@ -1,10 +1,12 @@
 using BepInEx;
 using HarmonyLib;
 using System.Collections.Generic;
-using Newtilla;
+using Utilla;
+using Utilla.Attributes;
 
 namespace NoMoreWind
 {
+    [ModdedGamemode] // Utilla Support
     [BepInPlugin(Constants.Guid, Constants.Name, Constants.Version)]
     public class Plugin : BaseUnityPlugin
     {
@@ -18,10 +20,8 @@ namespace NoMoreWind
         {
             Harmony.CreateAndPatchAll(GetType().Assembly, Constants.Guid); // Not listed under Harmony docs (https://harmony.pardeike.net/articles/basics.html) but this does mostly the same code under "Patching using annotations"
 
-            Newtilla.Newtilla.OnJoinModded += OnModdedJoin;
-            Newtilla.Newtilla.OnLeaveModded += OnModdedLeave;
-            // TillaHook.TillaHook.OnModdedJoin += OnModdedJoin; - TillaHook isnt out... yet
-            // TillaHook.TillaHook.OnModdedLeave += OnModdedLeave;
+            //TillaHook.TillaHook.OnModdedJoin += OnModdedJoin;
+            //TillaHook.TillaHook.OnModdedLeave += OnModdedLeave;
         }
 
         public void OnEnable()
@@ -36,6 +36,7 @@ namespace NoMoreWind
             SetForces(true); // We want forces to affect the player - typical code
         }
 
+        [ModdedGamemodeJoin] // Modded Join 
         public void OnModdedJoin(string gameMode)
         {
             Logger?.LogInfo("OnModdedJoin");
@@ -44,6 +45,7 @@ namespace NoMoreWind
             // The "enabled" variable is inherited from the "Behaviour" class
         }
 
+        [ModdedGamemodeLeave] // Modded Leave
         public void OnModdedLeave(string gameMode)
         {
             Logger?.LogInfo("OnModdedLeave");
@@ -58,7 +60,7 @@ namespace NoMoreWind
             if (!useForces)
             {
                 List<ForceVolume> activeForces = new(Patches.ActiveForces); // Create a NEW LIST from our EXISTING LIST, the latter will be modified based on what we'll do to the forces shortly
-                foreach(ForceVolume force in activeForces)
+                foreach (ForceVolume force in activeForces)
                 {
                     force.OnTriggerExit(GorillaTagger.Instance.headCollider); // Have our active force believe the player has exit it's trigger
                 }

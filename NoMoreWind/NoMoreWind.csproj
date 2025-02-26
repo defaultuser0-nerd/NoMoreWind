@@ -5,11 +5,6 @@
 	</PropertyGroup>
 	
 	<!-- i am very silly -->
-	<ItemGroup>
-		<Reference Include="TillaHook">
-			<HintPath>$(PluginsPath)\TillaHook\TillaHook.dll</HintPath>
-		</Reference>
-	</ItemGroup>
 
 	<ItemGroup>
 		<Reference Include="0Harmony">
@@ -35,6 +30,9 @@
 		</Reference>
 		<Reference Include="Mono.Security">
 			<HintPath>$(GameAssemblyPath)\Mono.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtilla">
+		  <HintPath>..\..\..\..\Downloads\Newtilla.dll</HintPath>
 		</Reference>
 		<Reference Include="Oculus.Platform">
 			<HintPath>$(GameAssemblyPath)\Oculus.Platform.dll</HintPath>
@@ -71,6 +69,9 @@
 		</Reference>
 		<Reference Include="System.ServiceModel.Internals">
 			<HintPath>$(GameAssemblyPath)\System.ServiceModel.Internals.dll</HintPath>
+		</Reference>
+		<Reference Include="TillaHook">
+		  <HintPath>..\..\TillaHook\TillaHook.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Animation.Rigging">
 			<HintPath>$(GameAssemblyPath)\Unity.Animation.Rigging.dll</HintPath>
@@ -275,6 +276,9 @@
 		</Reference>
 		<Reference Include="UnityEngine.XRModule">
 			<HintPath>$(GameAssemblyPath)\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="Utilla">
+		  <HintPath>..\..\..\..\SteamLibrary\steamapps\common\Gorilla Tag\BepInEx\plugins\Utilla\Utilla.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 </Project>
